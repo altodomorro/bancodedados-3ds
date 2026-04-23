@@ -32,4 +32,10 @@ VALUES
     (103, 1, 'A Moreninha'),
     (104, 3, '1984'),
     (105, 4, 'O Pequeno Príncipe');
+
  SELECT * FROM Clientes;
+
+SELECT c.nomeCliente, co.NomeLivro
+FROM Compras co
+INNER JOIN Clientes c
+    ON co.ClienteID = c.ID;
